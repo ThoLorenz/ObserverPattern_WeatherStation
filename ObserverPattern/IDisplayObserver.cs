@@ -2,5 +2,5 @@
 
 public interface IDisplayObserver
 {
-    public void Display(float temp, float humidity, float pressure);
+    public void Display();
 }

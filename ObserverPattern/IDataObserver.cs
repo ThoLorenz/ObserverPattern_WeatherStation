@@ -2,5 +2,5 @@
 
 public interface IDataObserver
 {
-    public void DataChanged(float temp, float humidity, float pressure);
+    public void Update();
 }

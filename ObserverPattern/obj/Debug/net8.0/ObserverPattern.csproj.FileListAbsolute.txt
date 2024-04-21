@@ -12,3 +12,4 @@ C:\Users\loren\RiderProjects\ObserverPattern_WeatherStation\ObserverPattern\obj\
 C:\Users\loren\RiderProjects\ObserverPattern_WeatherStation\ObserverPattern\obj\Debug\net8.0\ObserverPattern.pdb
 C:\Users\loren\RiderProjects\ObserverPattern_WeatherStation\ObserverPattern\obj\Debug\net8.0\ObserverPattern.genruntimeconfig.cache
 C:\Users\loren\RiderProjects\ObserverPattern_WeatherStation\ObserverPattern\obj\Debug\net8.0\ref\ObserverPattern.dll
+C:\Users\loren\RiderProjects\ObserverPattern_WeatherStation\ObserverPattern\obj\Debug\net8.0\ObserverPattern.sourcelink.json

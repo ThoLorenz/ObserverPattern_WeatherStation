@@ -39,7 +39,20 @@ public class WeatherDataSubject : ISubject
         _pressure = GetRandom(this._random, 10, 60);
         foreach (var observer in _observers)
         {
-            observer.DataChanged(_temperature, _humidity, _pressure);
+            observer.Update();
         }
+    }
+
+    public float GetPressure()
+    {
+        return this._pressure;
+    }
+    public float GetHumidity()
+    {
+        return this._humidity;
+    }
+    public float GetTemperature()
+    {
+        return this._temperature;
     }
 }

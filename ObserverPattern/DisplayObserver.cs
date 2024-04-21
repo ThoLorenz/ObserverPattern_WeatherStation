@@ -16,13 +16,14 @@ public class DisplayObserver : IDataObserver, IDisplayObserver
         _weatherDataSubject.RemoveObserver(this);
     }
     
-    public void DataChanged(float temp, float humidity, float pressure)
+    public void Update()
     {
-        Display(temp,humidity,pressure);
+        Display();
     }
 
-    public void Display(float temp, float humidity, float pressure)
+    public void Display()
     {
-        Console.WriteLine("Bildschirm_Observer : temp {0} , humidity {1}, pressure {2}", temp,humidity,pressure);
+        Console.WriteLine("Bildschirm_Observer : pressure {0} "
+            , _weatherDataSubject.GetPressure());
     }
 }

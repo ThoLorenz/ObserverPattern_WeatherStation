@@ -4,6 +4,9 @@ public class DataObserver : IDataObserver
 {
 
     private readonly WeatherDataSubject _weatherDataSubject;
+    private float _humidity ;
+    private float _pressure;
+    private float _temperature;
 
     public DataObserver(WeatherDataSubject subject)
     {
@@ -17,8 +20,9 @@ public class DataObserver : IDataObserver
     }
     
     
-    public void DataChanged(float temperature, float humidity, float pressure)
+    public void Update()
     {
-       Console.WriteLine("DataObserver : temp {0} , humidity {1}, pressure {2}", temperature,humidity,pressure);
+       Console.WriteLine("DataObserver : temp {0} , humidity {1}"
+           , _weatherDataSubject.GetTemperature(), _weatherDataSubject.GetHumidity());
     }
 }
